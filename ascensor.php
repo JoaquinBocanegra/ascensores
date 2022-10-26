@@ -47,14 +47,14 @@
     public function countPersonas(){
     return count($this->personas);
   }
-  public function verificarPesoMaximo(){
+  private function verificarPesoMaximo(){
     $pesoTotalPersonas= $this-> pesoTotal();
     if($pesoTotalPersonas>$this->pesoMaximoPermitido){
       return false;
     } else
      return true; 
     }
-    public function verificarCantidadPersonas(){
+    private function verificarCantidadPersonas(){
       $totalPersonas= $this->countPersonas();
       if($totalPersonas>$this->cantidadMaxPersonas){
         return false;

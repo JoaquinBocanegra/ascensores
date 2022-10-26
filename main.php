@@ -10,7 +10,7 @@ $nuevoAscensor->addPersona(120);
 $nuevoAscensor->addPersona(80);
 $nuevoAscensor->addPersona(80);
 $nuevoAscensor->addPersona(80);
-
+// var_dump($nuevoAscensor);
 $valorVerificacion=$nuevoAscensor->encenderAlarma();
 if($valorVerificacion){
     echo "normal";
