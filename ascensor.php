@@ -1,18 +1,21 @@
 <?php
   
   include_once('personas.php');
+  include_once("elevador.php");
 
-  class Ascensor{
+  class Ascensor extends Elevador{
     
     private $id;
     private $pesoMaximoPermitido;
     private $cantidadMaxPersonas;
-    private $ubicacion;
-    private $apertura;
+    
     private $personas=[];
     
     public function getId(){
       return $this->id;
+    }
+    public function setId($nuevoId){
+      $this->id=$nuevoId;
     }
     
     public function getPesoMaximoPermitido(){
